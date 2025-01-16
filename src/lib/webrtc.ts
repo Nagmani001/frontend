@@ -9,7 +9,7 @@ let roomId: any;
 
 
 export const onMount = async (myVideo: any) => {
-  const connSocket = io("http://be.nagmaniupadhyay.com.np");
+  const connSocket = io("https://be.nagmaniupadhyay.com.np");
   const connStream = await navigator.mediaDevices.getUserMedia({
     audio: true, video: {
       width: { ideal: 770 },
